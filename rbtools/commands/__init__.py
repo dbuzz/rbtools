@@ -256,6 +256,10 @@ class Command(object):
                    help='The remote tracking branch from which your '
                         'local branch is derived '
                         '(defaults to origin/master).'),
+            Option('--svn-base-revision',
+                   dest="svn_base_rev",
+                   default=None,
+                   help='Base revision for SVN-formatted patch on GIT repo'),
         ]
     )
 
